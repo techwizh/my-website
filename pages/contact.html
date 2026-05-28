@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Victor Kioko</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <a class="navbar-brand font-weight-bold" href="../index.html">VK.</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="achievements.html">Achievements</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        <li class="nav-item">
+          <a class="nav-link btn-resume ml-2" href="../assets/resume.pdf" download>
+            <i class="fas fa-download"></i> Resume
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <div class="container">
+
+      <div class="section-title text-center mb-5" data-aos="fade-up">
+        <h2>Get In <span class="gold">Touch</span></h2>
+        <div class="title-line"></div>
+        <p class="section-sub mt-3">I'm open to opportunities & collaborations</p>
+      </div>
+
+      <div class="row">
+
+        <!-- CONTACT INFO -->
+        <div class="col-md-5 mb-4" data-aos="fade-right">
+          <h5 class="gold mb-4">Contact Information</h5>
+
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <p class="contact-label">Location</p>
+              <p class="contact-value">Mombasa, Kenya</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <p class="contact-label">Email</p>
+              <p class="contact-value">victorkioko226@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <p class="contact-label">Phone</p>
+              <p class="contact-value">+254 741 314 370</p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="fas fa-briefcase"></i></div>
+            <div>
+              <p class="contact-label">Availability</p>
+              <p class="contact-value">Open to Work 🟢</p>
+            </div>
+          </div>
+
+          <!-- SOCIAL LINKS -->
+          <h5 class="gold mt-4 mb-3">Find Me Online</h5>
+          <div class="contact-socials">
+            <a href="https://github.com/techwizh" target="_blank" class="social-btn">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/victor-kioko-2ab482372" target="_blank" class="social-btn">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="mailto:victorkioko226@gmail.com" class="social-btn">
+              <i class="fas fa-envelope"></i> Email
+            </a>
+            <a href="https://wa.me/254103150972" target="_blank" class="social-btn">
+              <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- CONTACT FORM -->
+        <div class="col-md-7 mb-4" data-aos="fade-left">
+          <h5 class="gold mb-4">Send Me a Message</h5>
+          <div class="contact-form">
+
+            <div class="row">
+              <div class="col-sm-6 mb-3">
+                <label class="form-label">Your Name</label>
+                <input type="text" class="form-input" placeholder="John Doe"/>
+              </div>
+              <div class="col-sm-6 mb-3">
+                <label class="form-label">Your Email</label>
+                <input type="email" class="form-input" placeholder="john@email.com"/>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Subject</label>
+              <input type="text" class="form-input" placeholder="Job Opportunity / Collaboration"/>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea class="form-input" rows="5"
+                placeholder="Hi Victor, I'd like to discuss..."></textarea>
+            </div>
+
+            <button class="btn btn-gold btn-block" onclick="sendMessage()">
+              <i class="fas fa-paper-plane mr-2"></i> Send Message
+            </button>
+
+            <div id="successMsg" class="success-msg mt-3" style="display:none;">
+              <i class="fas fa-check-circle mr-2"></i>
+              Message sent! I'll get back to you soon.
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-3">
+    <p>&copy; 2026 Victor Kioko. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800, once: true });</script>
+  <script>
+    function sendMessage() {
+      const inputs = document.querySelectorAll('.form-input');
+      let filled = true;
+      inputs.forEach(input => {
+        if (!input.value.trim()) {
+          input.style.borderColor = '#e74c3c';
+          filled = false;
+        } else {
+          input.style.borderColor = 'rgba(201,168,76,0.4)';
+        }
+      });
+      if (filled) {
+        document.getElementById('successMsg').style.display = 'block';
+        inputs.forEach(input => input.value = '');
+        setTimeout(() => {
+          document.getElementById('successMsg').style.display = 'none';
+        }, 4000);
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Victor Kioko</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+  <link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <a class="navbar-brand font-weight-bold" href="../index.html">VK.</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+        <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="achievements.html">Achievements</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item">
+          <a class="nav-link btn-resume ml-2" href="../assets/resume.pdf" download>
+            <i class="fas fa-download"></i> Resume
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="projects">
+    <div class="container">
+
+      <div class="section-title text-center mb-5">
+        <h2>My <span class="gold">Projects</span></h2>
+        <div class="title-line"></div>
+        <p class="section-sub mt-3">Things I've built so far</p>
+      </div>
+
+      <div class="text-center mb-5">
+        <button class="filter-btn active" onclick="filterProjects('all')">All</button>
+        <button class="filter-btn" onclick="filterProjects('web')">Web</button>
+        <button class="filter-btn" onclick="filterProjects('mobile')">Mobile</button>
+        <button class="filter-btn" onclick="filterProjects('data')">Data</button>
+      </div>
+
+      <div class="row" id="projectsGrid">
+
+        <div class="col-md-6 col-lg-4 mb-4 project-item" data-category="web" data-aos="zoom-in">
+          <div class="project-card">
+            <div class="project-icon"><i class="fas fa-shopping-cart"></i></div>
+            <h5>E-Commerce Website</h5>
+            <p>A fully responsive e-commerce platform built with HTML, CSS, JavaScript and Bootstrap.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <div class="project-links mt-3">
+              <a href="#" class="btn-project"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="btn-project-live"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mb-4 project-item" data-category="mobile" data-aos="zoom-in" data-aos-delay="100">
+          <div class="project-card">
+            <div class="project-icon"><i class="fas fa-mobile-alt"></i></div>
+            <h5>Flutter Mobile App</h5>
+            <p>A cross-platform mobile application built with Flutter and Dart with clean UI design.</p>
+            <div class="project-tags">
+              <span>Flutter</span><span>Dart</span>
+            </div>
+            <div class="project-links mt-3">
+              <a href="#" class="btn-project"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="btn-project-live"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mb-4 project-item" data-category="data" data-aos="zoom-in" data-aos-delay="200">
+          <div class="project-card">
+            <div class="project-icon"><i class="fas fa-database"></i></div>
+            <h5>Data Pipeline Project</h5>
+            <p>Built an ETL data pipeline using Python and SQL to process and analyze large datasets.</p>
+            <div class="project-tags">
+              <span>Python</span><span>SQL</span><span>Django</span>
+            </div>
+            <div class="project-links mt-3">
+              <a href="#" class="btn-project"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="btn-project-live"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mb-4 project-item" data-category="web" data-aos="zoom-in" data-aos-delay="100">
+          <div class="project-card">
+            <div class="project-icon"><i class="fas fa-user-circle"></i></div>
+            <h5>Portfolio Website</h5>
+            <p>This personal portfolio website built with HTML, CSS, JavaScript and Bootstrap 4.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>Bootstrap</span>
+            </div>
+            <div class="project-links mt-3">
+              <a href="#" class="btn-project"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="btn-project-live"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mb-4 project-item" data-category="web" data-aos="zoom-in" data-aos-delay="200">
+          <div class="project-card">
+            <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+            <h5>React Dashboard</h5>
+            <p>An analytics dashboard built with React featuring dynamic charts and data visualization.</p>
+            <div class="project-tags">
+              <span>React</span><span>JavaScript</span><span>CSS</span>
+            </div>
+            <div class="project-links mt-3">
+              <a href="#" class="btn-project"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="btn-project-live"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mb-4 project-item" data-category="data" data-aos="zoom-in" data-aos-delay="300">
+          <div class="project-card">
+            <div class="project-icon"><i class="fas fa-brain"></i></div>
+            <h5>Data Analysis Tool</h5>
+            <p>A Python-based data analysis tool using pandas and matplotlib for visual insights.</p>
+            <div class="project-tags">
+              <span>Python</span><span>SQL</span>
+            </div>
+            <div class="project-links mt-3">
+              <a href="#" class="btn-project"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="btn-project-live"><i class="fas fa-external-link-alt"></i> Live</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center py-3">
+    <p>&copy; 2026 Victor Kioko. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800, once: true });</script>
+  <script>
+    function filterProjects(category) {
+      const items = document.querySelectorAll('.project-item');
+      const buttons = document.querySelectorAll('.filter-btn');
+      buttons.forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+      items.forEach(item => {
+        if (category === 'all' || item.dataset.category === category) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
